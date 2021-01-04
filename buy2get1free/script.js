@@ -21,3 +21,5 @@ for(let key in items) {
             arrItems.push('There is not enough info.')
     }
 }
+let discountMessage = () => console.log(arrItems.join(' '))
+discountMessage()
