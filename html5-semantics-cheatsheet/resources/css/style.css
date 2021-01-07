@@ -1,0 +1,22 @@
+body {
+    font-family: 'Fira Sans';
+    background-color: rgba(255,247,204,.5);
+    color: #484848;
+}
+.tag {
+    font-family: 'Fira Mono';
+    background-color: #eae9ed;
+    color: #15141f;
+}
+th {
+    background-color: #ffec8c;
+}
+header {
+    text-align: center;
+    background-color: #ffd500;
+    color: #000;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+  
