@@ -6,7 +6,7 @@ header {
     font-weight: bold;
     color: khaki;
     text-align: center;
-    background-image: url(./pattern.jpeg);
+    background-image: url("../pattern.jpeg");
 }
 section h2 {
     font-size: 32px;
