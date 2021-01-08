@@ -1,0 +1,32 @@
+/* Universal Styles */
+body {
+    text-align: center;
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+}
+/* Header */
+header h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+/* Download link */
+.download a {
+    font-size: 16px;
+    color: aquamarine;
+}
+/* Main content */
+section h2 {
+    font-weight: 300;
+    font-size: 42px;
+}
+.about {
+    font-size: 21px;
+    color: gray;
+}
+/* Footer */
+footer {
+    text-align: right;
+    font-size: 21px;
+    color: gray;
+}
