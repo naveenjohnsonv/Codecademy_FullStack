@@ -1,0 +1,78 @@
+body {
+    width: fit-content;
+    margin: auto;
+    max-width: 900px;
+}
+h1 {
+    font-family: "Lato", serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+h2  {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+p {
+    font-family: "Puritan", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.container {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.color-container {
+}
+.color-panel {
+    display: inline-block;
+    min-width: 150px;
+    width: 25%;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+}
+.color-panel p {
+    font-family: "Fira Mono", monospace;
+}
+.color-container .red1 {
+    background-color: #CC181E;
+}
+.color-container .red2 {
+    background-color: #DD4B39;
+}
+.color-container .blue1 {
+    background-color: #00ACEE;
+    color: black;
+}
+.color-container .blue2 {
+    background-color: #3B5998;
+}
+.color-container .blue3 {
+    background-color: #007BB6;
+}
+.font-panel {
+    display: inline-block;
+    width: fit-content;
+    margin: 0 20px;
+}
+.font-panel .regular {
+    font-weight: 400;
+}
+.font-panel .bold {
+    font-weight: bold;
+}
+.font-panel .italic {
+    font-style: italic;
+}
+.font-panel .serif {
+    font-family: "Lato", serif;
+}
+.font-panel .sans-serif {
+    font-family: "Fira Sans", sans-serif;
+}
+.font-panel .sans-serif-p {
+    font-family: "Puritan", sans-serif;
+}
