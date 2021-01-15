@@ -108,8 +108,17 @@ figure img {
   margin: 5px 20px;
   padding: 10px 0;
   width: 300px;
+  opacity: 1;
 }
 
 #address {
   margin: 20px 0;
+}
+
+.contact {
+  height: 200px;
+}
+.copyright {
+  text-align: left;
+  margin-left: 20px;
 }
