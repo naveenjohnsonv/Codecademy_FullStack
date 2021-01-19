@@ -1,0 +1,144 @@
+/* Universal Styles */
+
+body {
+  font-family: 'PT Sans', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: black;
+  font-size: 22px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat';
+}
+
+h2 {
+  font-family: 'Montserrat';
+}
+
+h3 {
+  font-family: 'Hind Madurai';
+}
+
+p {
+  font-family: 'Hind Guntur';
+}
+
+a {
+  color: black;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header Section */
+
+.sub-container {
+  display: flex;
+}
+
+#info {
+  margin: 0 50px;
+}
+
+header {
+  margin: 10px 0;
+}
+
+/* Main Section */
+
+#mission {
+  background-image: url("../images/skyscrapers.jpg");
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px 0;
+}
+
+#mission div {
+  background-color: white;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#portfolio {
+  margin-bottom: 10px;
+}
+
+#portfolio h2, p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.stock-img {
+  width: 200px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.image-container span {
+  flex-basis: 0;
+}
+
+#team 
+{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.team-container {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/blurred-road.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.employee-img {
+  height: 300px;
+}
+
+.employee {
+  color: white;
+  flex-basis: 280px;
+  padding: 10px;
+}
+
+.employee p {
+  padding: 0;
+}
+
+/* Footer */
+
+.email {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #info {
+    margin: 0;
+  }
+}
