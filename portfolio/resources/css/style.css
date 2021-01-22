@@ -154,10 +154,39 @@ footer p {
   font-family: monospace;
 }
 
+
+@media only screen and (max-width: 450px) {
+  .nav-menu {
+    margin-right: 0;
+  }
+  .nav-items {
+    margin-left: 0;
+  }
+  .heading-box {
+    padding: 200px 2%;
+    text-align: center;
+  }
+  main {
+    padding: 0 3%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .nav-menu {
+    margin-right: 50px;
+  }
+  .heading-box {
+    padding: 200px 2%;
+  }
+  main {
+    padding: 0 4%;
+  }
+}
+
 @media only screen and (max-width: 715px) {
   
   .heading-box {
-    padding: 200px 8%;
+    padding: 200px 5%;
   }
 
   header {
@@ -178,6 +207,8 @@ footer p {
 
   .work-img {
     padding: 0;
-    min-width: 400px;
+    min-width: 370px;
+    position: relative;
+    left: -9px;
   }
 }
