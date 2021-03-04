@@ -12,20 +12,37 @@ class Field {
   print() {
     console.log(this.field.map(i => i.join('')).join('\n'));
   }
-
+  static generateField(r,c,poh) {
+    let arr = Array.from(Array(r), () => new Array(c));
+    for(let i=0;i<r;i++)
+      for(let j=0;j<c;j++)
+        arr[i][j] = fieldCharacter;
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+    arr[0][0] = pathCharacter;
+    arr[getRandomInt(r)][getRandomInt(c)]=hat;
+    let holes = Math.floor((poh/100)*r*c)
+    while(holes) {
+      let tr = getRandomInt(r);
+      let tc = getRandomInt(c);
+      if(arr[tr][tc]!=pathCharacter && arr[tr][tc]!=hat && arr[tr][tc]!=hole) {
+        arr[tr][tc] = hole;
+        holes--;
+      }
+    }
+    return arr;
+  }
 }
 
-const myField = new Field([
-  ['*', '░', 'O'],
-  ['░', 'O', '░'],
-  ['░', '^', '░'],
-]);
+const myField = new Field(Field.generateField(10,10,30));
 
 let r = 0;
 let c = 0;
 let f = 0;
 
 do {
+  myField.print();
   let input = prompt('Which way ([u]p/[d]own/[l]eft/[r]ight)? ');
   switch(input) {
     case 'u':
@@ -61,7 +78,6 @@ do {
   }
   else {
     myField.field[r][c] = pathCharacter;
-    myField.print();
   }
 }
 while(!f);
